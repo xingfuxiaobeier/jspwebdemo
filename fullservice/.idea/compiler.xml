@@ -16,7 +16,7 @@
       <module name="fullservice" target="1.5" />
       <module name="webapi" target="1.8" />
       <module name="webcontract" target="1.5" />
-      <module name="webrpc" target="1.5" />
+      <module name="webrpc" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

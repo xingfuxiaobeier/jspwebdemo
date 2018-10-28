@@ -2,14 +2,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <parent>
-        <artifactId>full-service</artifactId>
-        <groupId>My</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.3.RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>My</groupId>
     <artifactId>web-rpc</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <!-- 如果在使用自带tomcat请注释下面，如果使用第三方tomcat不要注释下面 -->
+        <exclusions>
+            <exclusion>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-tomcat</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-server-spring-boot-starter</artifactId>
+            <version>1.3.0-RELEASE</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>net.devh</groupId>-->
+            <!--<artifactId>grpc-server-spring-boot-autoconfigure</artifactId>-->
+            <!--<version>1.2.0.RELEASE</version>-->
+        <!--</dependency>-->
+    </dependencies>
 
 </project>
