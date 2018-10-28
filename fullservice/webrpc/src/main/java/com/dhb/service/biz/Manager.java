@@ -11,13 +11,13 @@ import javax.annotation.PostConstruct;
 public class Manager {
     @PostConstruct
     public void test() {
-        while (true) {
-            System.out.println("this is the rpc server");
-            try {
-                Thread.sleep(1000L);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+//        while (true) {
+//            System.out.println("this is the rpc server");
+//            try {
+//                Thread.sleep(1000L);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 }

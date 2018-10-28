@@ -21,8 +21,8 @@ import java.util.Map;
 public class QueryController {
 
 //    static final Logger log = LoggerFactory.getLogger(QueryController.class);
-    @Autowired
-    private QueryService queryService;
+//    @Autowired
+//    private QueryService queryService;
 
     @RequestMapping("/")
     @ResponseBody
@@ -84,7 +84,7 @@ public class QueryController {
         System.out.println("login action request name : " + username +
                 ", pas : " + password +
                 ", email : " + email);
-        queryService.saveUserInfo(username, password, email);
+//        queryService.saveUserInfo(username, password, email);
         return "welcome";
     }
 }
